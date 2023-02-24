@@ -1,7 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
+// pages
+import { Home, Blog, Contact } from "./pages/index";
+// components
 import Header from "./components/Header";
 
 const App = () => {
@@ -11,6 +13,12 @@ const App = () => {
 			<Switch>
 				<Route exact path="/">
 					<Home />
+				</Route>
+				<Route path="/blog/">
+					<Blog />
+				</Route>
+				<Route path="/kontakt/">
+					<Contact />
 				</Route>
 			</Switch>
 		</>
